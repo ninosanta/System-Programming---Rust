@@ -31,6 +31,7 @@ impl PartialEq<Point> for Point {
     }
 }
 
+/* i32 does not implement PartialEq with Point */
 impl PartialEq<Point> for i32 {
     fn eq(&self, other: &Point) -> bool {
         // self == other  NOOOOOOOOOOOOOO
